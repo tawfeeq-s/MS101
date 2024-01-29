@@ -1,0 +1,13 @@
+
+quarkus:
+   datasource:
+      db-kind: mysql 
+      jdbc:
+        driver: com.mysql.jdbc.Driver
+        url:  jdbc:mysql://1.2.3.4:2020/test
+      username: username
+      password: xsw
+# drop and create the database at startup (use `update` to only update the schema)
+   hibernate-orm:
+      database:
+         generation: update
